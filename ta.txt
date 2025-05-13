@@ -1,0 +1,7 @@
+emcc snake.cpp -o index.html \
+  -s USE_SDL=2 \
+  -s USE_SDL_TTF=2 \
+  -s FULL_ES3=1 \
+  -s ALLOW_MEMORY_GROWTH=1 \
+  --preload-file ./ \
+  -Wno-implicit-function-declaration
